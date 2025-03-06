@@ -44,7 +44,7 @@ subprojects {
 
         implementation("org.jetbrains.kotlin:kotlin-stdlib")
         implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
-
+        implementation("io.github.microutils:kotlin-logging:3.0.5")
         testImplementation("org.springframework.boot:spring-boot-starter-test")
         testImplementation("org.jetbrains.kotlin:kotlin-test-junit5")
 
