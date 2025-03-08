@@ -8,11 +8,11 @@ include("search-common")
 include("search-domain")
 
 include("search-infra")
-include("search-infra:infra-persistence")
-findProject(":search-infra:infra-persistence")?.name = "infra-persistence"
-include("search-infra:infra-external")
-findProject(":search-infra:infra-external")?.name = "infra-external"
-include("search-infra:infra-external:kakao-client")
-findProject(":search-infra:infra-external:kakao-client")?.name = "kakao-client"
-include("search-infra:infra-external:naver-client")
-findProject(":search-infra:infra-external:naver-client")?.name = "naver-client"
+include("search-infra:persistence-jpa")
+findProject(":search-infra:infra-persistence-jpa")?.name = "infra-persistence-jpa"
+include("search-infra:externals")
+findProject(":search-infra:externals")?.name = "externals"
+include("search-infra:externals:kakao-client")
+findProject(":search-infra:externals:kakao-client")?.name = "kakao-client"
+include("search-infra:externals:naver-client")
+findProject(":search-infra:externals:naver-client")?.name = "naver-client"

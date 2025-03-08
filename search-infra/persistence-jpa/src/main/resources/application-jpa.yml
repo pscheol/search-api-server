@@ -1,0 +1,29 @@
+spring:
+  config:
+    activate:
+      on-profile: local
+  h2:
+    console:
+      enabled: true
+  datasource:
+    url: jdbc:h2:mem:search_db
+    driver-class-name: org.h2.Driver
+    username: sa
+    password:
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    properties:
+      hibernate:
+        format_sql: true
+        use_sql_comments: true
+logging:
+  level:
+    org:
+      hibernate:
+        orm.jdbc.bind: TRACE
+        SQL: DEBUG
+        type:
+          descriptor:
+            sql:
+              basicBinder: TRACE
