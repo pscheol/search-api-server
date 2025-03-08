@@ -1,0 +1,20 @@
+spring:
+  profiles:
+    active: local
+  config:
+    import:
+      - application-naver-client.yml
+      - application-kakao-client.yml
+      - application-search.yml
+      - application-jpa.yml
+springdoc:
+  api-docs:
+    groups:
+      enabled: true
+    path: /api-docs
+  swagger-ui:
+    path: /api-docs
+    operations-sorter: method
+    groups-order: asc
+    display-request-duration: true
+    disable-swagger-default-url: true
