@@ -3,6 +3,8 @@ package com.search.adapter.infra.kakao.feign.config
 import com.search.adapter.infra.kakao.feign.KakaoClient
 import com.search.adapter.infra.kakao.feign.dto.KakaoBlogResponse
 import com.search.adapter.infra.kakao.feign.dto.KakaoBookResponse
+import io.kotest.core.annotation.Ignored
+import io.kotest.core.spec.style.AnnotationSpec
 import io.kotest.core.spec.style.BehaviorSpec
 import io.kotest.extensions.spring.SpringExtension
 import io.kotest.matchers.nulls.shouldNotBeNull
@@ -11,9 +13,8 @@ import org.springframework.boot.autoconfigure.EnableAutoConfiguration
 import org.springframework.boot.test.context.SpringBootTest
 import org.springframework.cloud.openfeign.EnableFeignClients
 import org.springframework.test.context.ActiveProfiles
-import kotlin.test.Ignore
 
-@Ignore
+@Ignored
 @SpringBootTest(classes = [KakaoClientTest.TestConfig::class])
 @ActiveProfiles("test")
 class KakaoClientTest : BehaviorSpec() {
