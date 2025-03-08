@@ -4,7 +4,6 @@ import com.search.adapter.infra.kakao.feign.KakaoClient
 import com.search.adapter.infra.kakao.feign.dto.KakaoBlogResponse
 import com.search.adapter.infra.kakao.feign.dto.KakaoBookResponse
 import io.kotest.core.annotation.Ignored
-import io.kotest.core.spec.style.AnnotationSpec
 import io.kotest.core.spec.style.BehaviorSpec
 import io.kotest.extensions.spring.SpringExtension
 import io.kotest.matchers.nulls.shouldNotBeNull

@@ -18,3 +18,13 @@ springdoc:
     groups-order: asc
     display-request-duration: true
     disable-swagger-default-url: true
+
+
+logging:
+  level:
+    com:
+      search:
+        adapter:
+          infra:
+            kakao: DEBUG
+            naver: DEBUG
